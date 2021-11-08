@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:NotiLife/variables.dart';
 class Auth extends StatefulWidget {
   const Auth({ Key? key }) : super(key: key);
 
@@ -12,7 +11,6 @@ class _AuthState extends State<Auth> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFECEBD9),
       body: Center(child: Column(
         children: [
           const Text('Notilife', style: TextStyle(fontWeight: FontWeight.bold)),
