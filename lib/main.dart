@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'screens/_splash.dart';
+import 'screens/auths.dart';
+import 'screens/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,12 +12,17 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
-      color: Color(0xFFECEBD9),
+      color: Color(0xFFDEDCC5),
       title: 'Flutter Demo',
-      home: Splash(),
+      home: LogIn(),
+      initialRoute: '/',
+      routes: <String, WidgetBuilder>{
+        '/splash': (BuildContext context) => Splash(),
+        '/auth': (BuildContext context) => Auth(),
+        '/logIn': (BuildContext context) => LogIn(),
+      },
     );
   }
 }
-
