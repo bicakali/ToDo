@@ -80,7 +80,7 @@ class _AuthState extends State<Auth> {
                     style: TextStyle(
                         color: Colors.black26, fontWeight: FontWeight.bold)),
                 TextButton(
-                  child: const Text('Giriş Yap',
+                  child: const Text('Kayıt Ol',
                       style: TextStyle(
                           color: Colors.black, fontWeight: FontWeight.bold)),
                   onPressed: () {Navigator.pushNamed(context, '/logIn');},
@@ -190,9 +190,12 @@ class _LogInState extends State<LogIn> {
           backgroundColor: Color(0xFFE8E6D7),
           elevation: 0,
           centerTitle: true,
-          leading: const Icon(
-            CupertinoIcons.back,
-            color: Colors.black26,
+          leading: IconButton(
+            onPressed: () {Navigator.pop(context);},
+            icon: const Icon(
+              CupertinoIcons.back,
+              color: Colors.black26,
+            ),
           ),
           title: const Text('Email bilgileri ile kayıt',
               style: TextStyle(

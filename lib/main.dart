@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       color: Color(0xFFDEDCC5),
       title: 'Flutter Demo',
-      home: LogIn(),
+      home: Splash(),
       initialRoute: '/',
       routes: <String, WidgetBuilder>{
         '/splash': (BuildContext context) => Splash(),
